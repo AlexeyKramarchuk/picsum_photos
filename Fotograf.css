@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+  }
+
+.item {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+}
+
+.wrapper {
+    padding: 20px;
+    display: grid;
+    grid-template: repeat(4 , 150px) / repeat(8, 150px);
+    gap: 10px;
+
+}
+img {
+  max-width: 100%;
+}
+
+.btns {
+  height: 1000px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.btn {
+  padding: 15px;
+  font-size: 50px;
+  border-radius: 15px;
+}
