@@ -1,6 +1,5 @@
 let page=1;
 
-
 async function getPhotos(){
     const response=await fetch('https://picsum.photos/v2/list?page=1&limit=12')
     const data=await response.json()
@@ -19,7 +18,19 @@ wrapper.appendChild(div)
 })
 })
 
-const btn
+const btnLeft = document.querySelector('#left')
+const btnRight = document.querySelector('#right')
+
+btnLeft.addEventListener('click', () => {
+    console.log('click')
+})
+
+btnRight.addEventListener('click', () => {
+    // console.log('click')
+    window.location.href = 'http://127.0.0.1:5500/Fotograf.html'
+    getPhotos()
+})
+
 
 // przyciski na dole strony w prawo w lewo
 
@@ -29,8 +40,17 @@ const btn
 
 
 
+
+
+
+
+
+
+
+
+
 // generator formularzy
-const form=[
-    {name: 'test', label: 'l1', type:'text'},
-    {name: 'age', label: 'l2', type:'number'}
-]
+// const form=[
+//     {name: 'test', label: 'l1', type:'text'},
+//     {name: 'age', label: 'l2', type:'number'}
+// ]

@@ -18,7 +18,7 @@
 .wrapper {
     padding: 20px;
     display: grid;
-    grid-template: repeat(4 , 150px) / repeat(8, 150px);
+    grid-template: repeat(2 , 150px) / repeat(6, 150px);
     gap: 10px;
 
 }
@@ -27,14 +27,22 @@ img {
 }
 
 .btns {
-  height: 1000px;
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
 }
 
 .btn {
-  padding: 15px;
-  font-size: 50px;
-  border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    height: 15px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 10px;
+    background-color: orange;
+    color: #fff;
+    cursor: pointer;
 }
